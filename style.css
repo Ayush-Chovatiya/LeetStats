@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #82A0BC ;
+    color: #304D6D;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.container {
+    padding: 2rem;
+    background-color: #A7CCED;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #304D6D;
+}
+
+.user-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.user-input-container {
+    display: flex;
+    gap: 1rem;
+}
+
+#user-input {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+#search-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #304D6D;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#search-btn:hover {
+    background-color: #82A0BC;
+}
+
+.stats-container {
+    margin-top: 1rem;
+}
+
+.progress {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(#ddd 0%, #ddd 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    text-align: center;
+    color: #304D6D;
+}
+
+.easy-progress {
+    background: conic-gradient(#81ed75 var(--progress-degree, 0%), #eee 0%);
+}
+
+.med-progress {
+    background: conic-gradient(#f2c94c var(--progress-degree, 0%), #eee 0%);
+}
+
+.hard-progress {
+    background: conic-gradient(#eb5757 var(--progress-degree, 0%), #eee 0%);
+}
+
+.circle span {
+    z-index: 2;
+}
+
+.stats-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fefefe;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+
+.stats-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetMeKnow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>LeetMeKnow</h1>
+        <div class="user-container">
+            <p>Enter Username:</p>
+            <div class="user-input-container">
+                <input type="text" placeholder="Enter username here" id="user-input">
+                <button id="search-btn">Search</button>
+            </div>
+        </div>
+
+        <div class="stats-container">
+            <div class="progress">
+                <div class="circle easy-progress"><span id="easy-label">0 / 0</span></div>
+                <div class="circle med-progress"><span id="med-label">0 / 0</span></div>
+                <div class="circle hard-progress"><span id="hard-label">0 / 0</span></div>
+            </div>
+
+            <div class="stats-card"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
